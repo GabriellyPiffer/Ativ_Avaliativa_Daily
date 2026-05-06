@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily de Tarefas</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Daily de Tarefas</h1>
+
+        <button onclick="cadastro.classList.remove('oculto')">
+            Adicionar Tarefa
+        </button>
+    </header>
+
+    <div class="container">
+
+    <nav>
+        <ul>
+          <a href="index.html"><li>Daily</li></a>
+          <a href="clima.html"><li>Clima</li></a>
+        </ul>
+    </nav>
+
+    <main></main>
+
+</div>
+
+
+    <div id="cadastro" class="modal oculto">
+        <div class="janela">
+
+            <h2>Adicionar Tarefa</h2>
+
+            <form id="formCad">
+
+                <label>Nome da Tarefa</label>
+                <input type="text" id="nome" required>
+
+                <label>Descrição</label>
+                <textarea id="descricao" required></textarea>
+
+                <label>Data Final</label>
+                <input type="date" id="datafinal">
+
+                <label>URL da imagem</label>
+                <input type="text" id="urlImagem">
+
+                <br><br>
+
+                <button type="reset" onclick="cadastro.classList.add('oculto')">
+                    Cancelar
+                </button>
+
+                <button type="submit">
+                    Salvar
+                </button>
+
+            </form>
+
+        </div>
+    </div>
+
+    <div id="detalhes" class="modal oculto">
+        <div class="janela">
+
+            <h2 id="tituloTarefa"></h2>
+
+            <img id="imgTarefa">
+
+            <p><b>Nome</b></p>
+            <input type="text" id="nomeEdit">
+
+            <p><b>Imagem (URL)</b></p>
+            <input type="text" id="imgEdit">
+
+            <p><b>Descrição</b></p>
+            <textarea id="descricaoEdit"></textarea>
+
+            <p><b>Data Final</b></p>
+            <input type="date" id="dataFimEdit">
+
+            <br><br>
+
+            <button onclick="salvarEdicao()">Salvar</button>
+
+            <button onclick="excluirTarefaAtual()">Excluir</button>
+
+            <button onclick="detalhes.classList.add('oculto')">
+                Fechar
+            </button>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
