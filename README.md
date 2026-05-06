@@ -11,11 +11,11 @@ O Daily Check funciona em uma única interface principal, deixando tudo mais pr�
 Mostra os cards das tarefas já cadastradas, com imagem e informações básicas.
 Na mesma tela também é possível cadastrar uma nova tarefa, sem precisar mudar de página.
 ➕ Cadastro de Tarefas:
-Permite adicionar tarefas com:
-Nome
-Data de início(Automática com a data do dia de criação)
-Data de fim
-Descrição (em modal)
+Permite adicionar tarefas com:<br>
+Nome<br>
+Data de início(Automática com a data do dia de criação)<br>
+Data de fim<br>
+Descrição (em modal)<br>
 imagem
 As informações são salvas em um banco de dados usando Prisma.<br>
 🌡️ Temperatura:
